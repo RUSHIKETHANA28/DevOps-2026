@@ -1,0 +1,185 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background-color: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.dashboard > h1 {
+  text-align: center;
+  color: #1f3c88;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #1f3c88;
+  margin-bottom: 18px;
+}
+
+.card p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Subjects */
+
+.subject-list {
+  padding-left: 20px;
+}
+
+.subject-list li {
+  margin: 10px 0;
+}
+
+/* Attendance */
+
+.attendance {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.attendance-bar {
+  height: 100%;
+  background-color: #1f3c88;
+  border-radius: 10px;
+}
+
+.attendance-percentage {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.eligible {
+  color: green;
+}
+
+.not-eligible {
+  color: red;
+}
+
+/* Student Section */
+
+.students-section {
+  margin-top: 40px;
+}
+
+.students-section h2 {
+  text-align: center;
+  color: #1f3c88;
+  margin-bottom: 20px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.student-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-card h2 {
+  color: #1f3c88;
+  margin-bottom: 15px;
+}
+
+.student-card p {
+  margin: 10px 0;
+}
+
+.student-card button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f3c88;
+  color: white;
+  cursor: pointer;
+}
+
+.student-card button:hover {
+  background-color: #162d68;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 40px;
+  background-color: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
