@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.header h1 {
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 17px;
+}
+
+/* Main */
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.container > h2 {
+  text-align: center;
+  color: #1f3c88;
+  margin-bottom: 20px;
+}
+
+/* Search */
+
+.search-box {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 350px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #1f3c88;
+  margin-bottom: 18px;
+}
+
+.card p {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+/* Student List */
+
+.card button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: #e8ecf5;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.card button:hover {
+  background: #d5ddf0;
+}
+
+.card button.selected {
+  background: #1f3c88;
+  color: white;
+}
+
+/* Marks */
+
+.mark-input {
+  margin-bottom: 15px;
+}
+
+.mark-input label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.mark-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Grade */
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}
+
+/* Class Average */
+
+.class-average {
+  background: white;
+  margin-top: 25px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.class-average h2 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.class-average p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #1f3c88;
+  color: white;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
